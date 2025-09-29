@@ -1,9 +1,60 @@
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; st-business://com.splashtop.business?account=bryanvanrooij@icloud.com&uuid=49718800040363ba4bc544b5caa4ea30&sessiontype=remote">
-    <title>Open Splashtop</title>
-  </head>
-  <body>
-    <p>Als je niet automatisch wordt doorgestuurd, klik <a href="st-business://com.splashtop.business?account=bryanvanrooij@icloud.com&uuid=49718800040363ba4bc544b5caa4ea30&sessiontype=remote">hier</a> om Splashtop te openen.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="3; url=st-business://com.splashtop.business?account=bryanvanrooij@icloud.com&uuid=49718800040363ba4bc544b5caa4ea30&sessiontype=remote">
+  <title>Open Splashtop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .container {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 30px 50px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease-in-out;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1em;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: #ffffff;
+      color: #0078ff;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    a.button:hover {
+      background: #0078ff;
+      color: #ffffff;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Splashtop openen...</h1>
+    <p>Je wordt automatisch doorgestuurd. Als dit niet werkt, klik op de knop hieronder:</p>
+    <a class="button" href="st-business://com.splashtop.business?account=bryanvanrooij@icloud.com&uuid=49718800040363ba4bc544b5caa4ea30&sessiontype=remote">Open Splashtop</a>
+  </div>
+</body>
 </html>
