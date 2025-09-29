@@ -2,12 +2,11 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="3; url=st-business://com.splashtop.business?account=bryanvanrooij@icloud.com&uuid=49718800040363ba4bc544b5caa4ea30&sessiontype=remote">
   <title>Open Splashtop</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      background: linear-gradient(135deg, #6bab85, #3f8f65); /* gradient op basis van je icoon */
       height: 100vh;
       margin: 0;
       display: flex;
@@ -33,15 +32,15 @@
       display: inline-block;
       margin-top: 15px;
       padding: 12px 25px;
-      background: #ffffff;
-      color: #0078ff;
+      background: #6bab85; /* hoofdkleur */
+      color: #ffffff;
       font-weight: bold;
       border-radius: 8px;
       text-decoration: none;
       transition: 0.3s;
     }
     a.button:hover {
-      background: #0078ff;
+      background: #5a9b73; /* iets donkerder groen bij hover */
       color: #ffffff;
     }
     @keyframes fadeIn {
@@ -49,6 +48,12 @@
       to { opacity: 1; transform: translateY(0); }
     }
   </style>
+  <script>
+    window.onload = function() {
+      // direct triggeren zodra de pagina is geladen
+      window.location.href = "st-business://com.splashtop.business?account=bryanvanrooij@icloud.com&uuid=49718800040363ba4bc544b5caa4ea30&sessiontype=remote";
+    };
+  </script>
 </head>
 <body>
   <div class="container">
